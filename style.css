@@ -51,6 +51,7 @@ a {
 }
 .nav-li {
   margin: 20px;
+  color: #212121;
 }
 .nav-li:hover {
   color: #2196f3;
@@ -240,18 +241,6 @@ fill: #FFFFFF;
 }
 .svg-all{
   fill: #AFB1B8;
-}
-.svg-instagram:hover{
-
-}
-.svg-linkedin:hover{
-
-}
-.svg-facebook:hover{
-
-}
-.svg-twitter:hover{
-
 }
 .svg-instagram{
   width: 20px;
@@ -569,4 +558,3 @@ text-transform: uppercase;
 color: #FFFFFF;
 padding-bottom: 20px;
 }
-
