@@ -392,6 +392,7 @@ opacity: 1;
   animation-name: modalTop;
     animation-duration: 1.5s;
   animation-direction: alternate;
+  border-radius: 2px;
 }
 @keyframes modalTop{
 0%{
@@ -413,9 +414,9 @@ opacity: 1;
   /* width:40px  ;
   height:40px  ; */
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 24px;
+  top: 5px;
+  right: 8px;
+  font-size: 20px;
 }
 .svg-antenna{
   width: 70px;
@@ -581,4 +582,25 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 padding-bottom: 20px;
+}
+.modal-h3{
+  display: flex;
+  justify-content: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.03em;
+color: #212121;
+margin-top: 40px;
+}
+.modal-close-svg{
+  /* width:25px ;
+  height:25px ;*/
+  border: 1px solid #0000001A;
+  border-radius: 12px;
+width: 18px;
+height: 18px;
+
 }
