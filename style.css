@@ -367,8 +367,19 @@ fill: #2196F3;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   display: block;
-transform: scale(10);
-
+  animation-name:backdropBot ;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+}
+@keyframes backdropBot {
+  0% {
+  top: 100%;
+  opacity: 0;
+  }
+  100%{
+    top: 0%;
+opacity: 1;
+  }
 }
 .modal{
   width:500px ;
@@ -378,6 +389,19 @@ transform: scale(10);
   left: 50%;
  transform: translate(-50%,-50%)!important;
   position: fixed;
+  animation-name: modalTop;
+    animation-duration: 1.5s;
+  animation-direction: alternate;
+}
+@keyframes modalTop{
+0%{
+  top: -100%;
+  opacity: 0;
+}
+100%{
+  bottom: 0%;
+  opacity: 1;
+}
 }
 .is-hidden{
   /* opacity: 0; */
