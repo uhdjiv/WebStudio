@@ -408,10 +408,43 @@ opacity: 1;
   margin-right: 39px;
   margin-top: 12px;
   margin-bottom: 20px;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.modal-input-1{
+
+box-sizing: border-box;
+position: absolute;
+width: 448px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.modal-input-2{
+box-sizing: border-box;
+position: absolute;
+width: 448px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.modal-input-3{
+box-sizing: border-box;
+position: absolute;
+width: 448px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .person-black{
   width: 18px;
 height: 18px;
+
 }
 .person-black:hover{
   fill: #2196F3;
@@ -419,6 +452,7 @@ height: 18px;
 .phone-black{
 width: 18px;
 height: 18px;
+
 }
 .phone-black:hover{
   fill: #2196F3;
@@ -426,6 +460,7 @@ height: 18px;
 .email-black{
 width: 18px;
 height: 18px;
+
 }
 .email-black:hover{
   fill: #2196F3;
