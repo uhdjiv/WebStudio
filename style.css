@@ -114,6 +114,10 @@ a {
 justify-content: center; */
   margin-top: 30px;
 }
+.button-section1:hover{
+  transition: 0.2s;
+  box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .a-section1 {
   display: flex;
   justify-content: center;
@@ -393,6 +397,73 @@ opacity: 1;
     animation-duration: 1.5s;
   animation-direction: alternate;
   border-radius: 2px;
+
+}
+.modal:hover{
+  transition: 0.2s;
+  box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.form-modal{
+  margin-left: 41px;
+  margin-right: 39px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.person-black{
+  width: 18px;
+height: 18px;
+}
+.person-black:hover{
+  fill: #2196F3;
+}
+.phone-black{
+width: 18px;
+height: 18px;
+}
+.phone-black:hover{
+  fill: #2196F3;
+}
+.email-black{
+width: 18px;
+height: 18px;
+}
+.email-black:hover{
+  fill: #2196F3;
+}
+.modal-name{
+
+width: 22px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+}
+.modal-phone{
+  width: 50px;
+height: 14px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+}
+.modal-email{
+width: 38px;
+height: 14px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
 }
 @keyframes modalTop{
 0%{
@@ -603,4 +674,7 @@ margin-top: 40px;
 width: 18px;
 height: 18px;
 
+}
+.textarea-modal{
+  resize: none;
 }
