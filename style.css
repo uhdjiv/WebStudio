@@ -397,54 +397,63 @@ opacity: 1;
     animation-duration: 1.5s;
   animation-direction: alternate;
   border-radius: 2px;
-
+padding-top: 40px ;
+padding-bottom:40px ;
 }
 .modal:hover{
   transition: 0.2s;
   box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .form-modal{
-  margin-left: 41px;
-  margin-right: 39px;
   margin-top: 12px;
   margin-bottom: 20px;
-  display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  margin: 0 auto;
+width: 448px;
+}
+.div-modal{
+  position: relative;
+  margin-bottom: 10px;
 }
 .modal-input-1{
-
 box-sizing: border-box;
-position: absolute;
 width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 42px;
+}
+.modal-input-1:focus{
+  outline:2px solid #2196F3;
+}
+.modal-input-2:focus{
+  outline:2px solid #2196F3;
+}
+.modal-input-3:focus{
+  outline:2px solid #2196F3;
 }
 .modal-input-2{
 box-sizing: border-box;
-position: absolute;
 width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 42px;
 }
 .modal-input-3{
 box-sizing: border-box;
-position: absolute;
 width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+padding-left: 42px;
 }
 .person-black{
   width: 18px;
 height: 18px;
-
+position: absolute;
+z-index:2;
+bottom: 12px;
+left: 15px;
 }
 .person-black:hover{
   fill: #2196F3;
@@ -452,7 +461,10 @@ height: 18px;
 .phone-black{
 width: 18px;
 height: 18px;
-
+position: absolute;
+z-index:2;
+bottom: 12px;
+left: 15px;
 }
 .phone-black:hover{
   fill: #2196F3;
@@ -460,7 +472,10 @@ height: 18px;
 .email-black{
 width: 18px;
 height: 18px;
-
+position: absolute;
+z-index:2;
+bottom: 12px;
+left: 15px;
 }
 .email-black:hover{
   fill: #2196F3;
@@ -517,12 +532,13 @@ color: #757575;
 }
 .close-button{
   background-color: #FFFFFF;
-  /* width:40px  ;
-  height:40px  ; */
+  width:30px  ;
+  height:30px  ;
   position: absolute;
   top: 5px;
   right: 8px;
-  font-size: 20px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
 }
 .svg-antenna{
   width: 70px;
@@ -699,17 +715,70 @@ font-size: 20px;
 line-height: 23px;
 letter-spacing: 0.03em;
 color: #212121;
-margin-top: 40px;
+margin-bottom: 10px;
 }
 .modal-close-svg{
-  /* width:25px ;
-  height:25px ;*/
-  border: 1px solid #0000001A;
-  border-radius: 12px;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
 width: 18px;
 height: 18px;
-
+transition: fill 250ms linear;
+}
+.close-button:hover .modal-close-svg{
+  fill: #2196F3;
+  cursor: pointer;
 }
 .textarea-modal{
   resize: none;
+}
+.textarea-modal{
+box-sizing: border-box;
+width: 448px;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 12px 16px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: rgba(117, 117, 117, 0.5);
+}
+.modal-comm{
+width: 57px;
+height: 14px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #757575;
+margin-bottom: 4px;
+}
+.textarea-modal:focus{
+    outline:2px solid #2196F3;
+}
+.input-checkbox{
+  margin-top: 20px;
+  /* icon check */
+position: absolute;
+width: 16px;
+height: 15px;
+}
+.p-checkbox{
+/* Погоджуюся з розсилкою та приймаю Умови договору */
+
+position: absolute;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #757575;
+margin-top: 15px;
+padding-left: 21px;
 }
