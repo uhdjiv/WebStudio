@@ -386,8 +386,8 @@ opacity: 1;
   }
 }
 .modal{
-  width:500px ;
-  height: 500px;
+  width:528px ;
+  height: 581px;
   background-color: #FFFFFF;
   top: 50%;
   left: 50%;
@@ -763,22 +763,51 @@ margin-bottom: 4px;
     outline:2px solid #2196F3;
 }
 .input-checkbox{
-  margin-top: 20px;
-  /* icon check */
-position: absolute;
 width: 16px;
 height: 15px;
 }
 .p-checkbox{
-/* Погоджуюся з розсилкою та приймаю Умови договору */
-
-position: absolute;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 color: #757575;
-margin-top: 15px;
-padding-left: 21px;
+padding-left: 7px;
+}
+.div-input-3000pro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.a-input-3000pro{
+  text-decoration:underline;
+  color: #2196f3;
+}
+.button-form{
+  transition:box-shadow 500ms;
+width: 200px;
+height: 50px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: block;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+background-color: #188CE8;
+padding-left: 52px;
+padding-right: 52px;
+margin: 0 auto;
+border-radius: 4px;
+}
+.button-form:hover{
+  cursor: pointer;
+-webkit-box-shadow: 0px 7px 37px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 37px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 7px 37px -6px rgba(0,0,0,0.75);
 }
