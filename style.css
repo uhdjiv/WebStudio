@@ -56,6 +56,7 @@ a {
 .nav-li:hover {
   color: #2196f3;
   cursor: pointer;
+    transition: 250ms;
 }
 .info {
   font-family: Roboto;
@@ -73,6 +74,7 @@ a {
 .info-li:hover{
   fill: #2196F3;
   color: #2196F3;
+    transition: 250ms;
 }
 .info-li-a {
   color: #757575;
@@ -80,6 +82,7 @@ a {
 .info-li-a:hover {
   color: #2196f3;
   cursor: pointer;
+    transition: 250ms;
 }
 .section-1 {
   height: 550px;
@@ -117,6 +120,7 @@ justify-content: center; */
 .button-section1:hover{
   transition: 0.2s;
   box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .a-section1 {
   display: flex;
@@ -768,6 +772,9 @@ margin-bottom: 4px;
 width: 16px;
 height: 15px;
 }
+.input-checkbox:hover{
+cursor: pointer;
+}
 .p-checkbox{
 font-family: 'Roboto';
 font-style: normal;
@@ -812,4 +819,59 @@ border-radius: 4px;
 -webkit-box-shadow: 0px 7px 37px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 7px 37px -6px rgba(0,0,0,0.75);
 box-shadow: 0px 7px 37px -6px rgba(0,0,0,0.75);
+}
+.footer-div-rossulka{
+margin-left: 93px;
+}
+.rosulka-p{
+width: 207px;
+height: 16px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+}
+.rosulka-input{
+margin-top: 20px;
+width: 358px;
+height: 50px;
+border: 1.5px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+background-color: #2F303A;
+padding-left: 16px;
+transition: 500ms;
+}
+.rosulka-input:hover{
+
+}
+.rosulka-input:focus{
+  outline:0px solid ;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.rosulka-button{
+  margin-left: 12px;
+margin-top: 20px;
+width: 200px;
+height: 50px;
+background-color: #2196F3;
+position: absolute;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+color: #FFFFFF;
+border-radius: 4px;
+transition: 500ms;
+}
+.rosulka-button:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    cursor: pointer;
+}
+.svg-send{
+  width: 24px;
+  height: 24px;
 }
