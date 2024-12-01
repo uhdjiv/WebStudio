@@ -72,6 +72,9 @@ a {
   cursor: pointer;
     transition: 250ms;
 }
+.nav-li-stydio{
+      color: #2196f3;
+}
 .info {
   font-family: Roboto;
   font-weight: Medium;
@@ -302,7 +305,6 @@ padding-top: 15px;
 }
 .li-svg-s4-2:hover .svg-all-2{
 fill: #FFFFFF;
-
 }
 .a-svg-s4-2{
   text-decoration: none;
