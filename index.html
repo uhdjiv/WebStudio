@@ -21,7 +21,7 @@
         <header>
             <div class="conteiner">
             <nav class="navigation">
-                <a class="logo" href="">Web <span class="span">Studio</span></a>
+                <a class="logo" href="">Web<span class="span">Studio</span></a>
                 <ul class="nav-ul">
                     <li class="nav-li">Студія</li>
                     <a href="./portfolio.html"><li class="nav-li">Портфоліо</li></a>
@@ -209,7 +209,7 @@
      <footer>
         <div class="conteiner div-foot">
             <div class="div-foot-x2">
-        <a class="logo2" href="">Web <span class="span-2">Studio</span></a>
+        <a class="logo2" href="">Web<span class="span-2">Studio</span></a>
      <address class="address">
      м. Київ, пр-т Лесі Українки, 26
      </address>
@@ -240,10 +240,12 @@
     </div>
     <div class="footer-div-rossulka">
         <p class="rosulka-p">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-        <input class="rosulka-input" type="email" placeholder="E-mail">
-        <button class="rosulka-button">Підписатися <svg class="svg-send">
+        <form action="">
+        <input required class="rosulka-input" type="email" placeholder="E-mail" autocomplete="email">
+        <a class="a-button-footer" href="./scam.html" target="_blank"><button  class="rosulka-button">Підписатися <svg class="svg-send">
             <use href="./img/symbol-defs-3.svg#icon-icon-send"></use>
-        </svg></button>
+        </svg></button></a>
+        </form>
     </div>
     </div>
      </footer>
@@ -253,29 +255,29 @@
     <use href="./img/symbol-defs-2.svg#icon-close-black-18dp-2-1"></use>
 </svg></button>
    <h3 class="modal-h3">Залиште свої дані, ми вам передзвонимо</h3>
-   <form class="form-modal" action="">
+   <form autocomplete="on" class="form-modal" action="">
     <div class="div-modal"><p class="modal-name">Ім'я</p>
         <svg class="person-black">
             <use href="./img/symbol-defs-2.svg#icon-person-black"></use>
         </svg>
-        <input class="modal-input-1" type="text">
+        <input required class="modal-input-1" type="text" autocomplete="name">
     </div>
     <div class="div-modal"><p class="modal-phone">Телефон</p>
         <svg class="phone-black">
             <use href="./img/symbol-defs-2.svg#icon-phone-black-18dp-1"></use>
         </svg>
-        <input class="modal-input-2" type="text">
+        <input required class="modal-input-2" type="tel" autocomplete="tel">
     </div>
     <div class="div-modal"><p class="modal-email">Пошта</p>
         <svg class="email-black">
             <use href="./img/symbol-defs-2.svg#icon-email-black-18dp-1"></use>
         </svg>
-        <input class="modal-input-3" type="text">
+        <input required class="modal-input-3" type="email" autocomplete="email">
     </div>
     <p class="modal-comm">Коментар</p>
-   <textarea class="textarea-modal" name="" id="" placeholder="Введіть текст"></textarea>
+   <textarea required class="textarea-modal" name="" id="" placeholder="Введіть текст"></textarea>
    <div class="div-input-3000pro">
-    <input class="input-checkbox" type="checkbox"><p class="p-checkbox">Погоджуюся з розсилкою та приймаю <a class="a-input-3000pro" href="">Умови договору</a></p>
+    <input required class="input-checkbox" type="checkbox"><p class="p-checkbox">Погоджуюся з розсилкою та приймаю <a class="a-input-3000pro" href="">Умови договору</a></p>
    </div>
    <button class="button-form">Відправити</button>
 </form>

@@ -1,3 +1,9 @@
+.hovvdgh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -863,15 +869,26 @@ font-weight: 700;
 font-size: 16px;
 line-height: 30px;
 text-align: center;
+align-items: center;
 color: #FFFFFF;
 border-radius: 4px;
 transition: 500ms;
+padding-right: 28px;
 }
 .rosulka-button:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+-webkit-box-shadow: 1px 0px 24px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 0px 24px -3px rgba(0,0,0,0.75);
+box-shadow: 1px 0px 24px -3px rgba(0,0,0,0.75);
     cursor: pointer;
 }
 .svg-send{
   width: 24px;
   height: 24px;
+  align-items: center;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.a-button-footer{
+align-items: center;
 }
