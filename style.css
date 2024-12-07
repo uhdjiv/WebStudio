@@ -75,6 +75,25 @@ a {
 .nav-li-stydio{
       color: #2196f3;
 }
+.nav-li-a-stydio{
+color: #2196f3;
+position: relative;
+}
+.nav-li-a-stydio::after{
+  content:"" ;
+  display: block;
+  position:absolute;
+  width: 100%;
+  height: 4px;
+  top: 44px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transition:top 250ms,transform 250ms;
+}
+.nav-li-a-stydio:hover::after{
+top: 41px;
+transform: scale(1.2);
+}
 .info {
   font-family: Roboto;
   font-weight: Medium;

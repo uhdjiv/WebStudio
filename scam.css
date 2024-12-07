@@ -1,3 +1,10 @@
-.a-scam{
+.divchik{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+transition:transform 500ms;
+}
+.divchik:hover{
     
+    transform: translateY(20%);
 }
