@@ -112,6 +112,10 @@ transform: scale(1.2);
   color: #2196F3;
     transition: 250ms;
 }
+.svg-envelope:hover{
+      transition: 250ms;
+        fill: #2196F3;
+}
 .info-li-a {
   color: #757575;
 }
