@@ -114,22 +114,41 @@ a {
   cursor: pointer;
   transition: 250ms;
 }
-.svg-envelope {
-  width: 18px;
-  height: 14px;
+.svg-envelope{
+  width:18px ;
+  height:14px ;
   margin-right: 10px;
+  fill: #757575;
+transition: fill 250ms;
+}
+.svg-envelope:hover{
+  fill: #2196F3;
+  .info-li-a{
+    color: #2196F3;
+  }
 }
 .svg-envelope:hover {
   fill: #2196f3;
 }
-.svg-smartphone {
-  width: 18px;
-  height: 14px;
-  margin-right: 10px;
+.svg-smartphone{
+width: 18px;
+height: 14px;
+margin-right: 10px;
+  fill: #757575;
+transition:  fill 250ms;
 }
-
-.svg-smartphone:hover {
-  fill: #2196f3;
+.svg-smartphone:hover{
+fill: #2196F3;
+}
+.info-li-a:hover {
+  color: #2196f3;
+  cursor: pointer;
+    .svg-envelope{
+      fill: #2196F3;
+    }
+    .svg-smartphone{
+      fill: #2196F3;
+    }
 }
 .svg-all-2 {
   fill: #ffffff;
@@ -325,3 +344,45 @@ footer {
   margin-top: 94px;
   margin-bottom: 94px;
 }
+
+.galerry{
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    grid-template-rows: repeat(3,404px);
+    gap: 30px;
+}
+.galerry-div-p{
+padding: 20px 24px;
+}
+.galerry-img{
+width: 370px;
+height: 294px;
+}
+.galerry-p{
+margin-bottom: 4px;
+color: #212121;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1.08px;
+}
+.galerry-p1{
+color: #757575;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.48px;
+}
+.galerry-li{
+    border: 1px solid #EEE;
+background: #FFF;
+transition:box-shadow 250ms;
+&:hover{
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+}
+
