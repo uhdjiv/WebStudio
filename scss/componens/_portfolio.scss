@@ -59,19 +59,19 @@ a {
 .nav-li {
   margin: 20px;
   color: #212121;
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-li:hover {
   color: #2196f3;
   cursor: pointer;
-  transition: 250ms;
 }
 .a-nav {
   color: #212121;
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .a-nav:hover {
   color: #2196f3;
   cursor: pointer;
-  transition: 250ms;
 }
 .nav-li-port {
   color: #2196f3;
@@ -89,7 +89,8 @@ a {
   top: 44px;
   background-color: #2196f3;
   border-radius: 2px;
-  transition: top 250ms, transform 250ms;
+  transition: top 250ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .nav-a-portfolio:hover::after {
   top: 41px;
@@ -107,26 +108,27 @@ a {
   margin: 20px;
   display: flex;
   align-items: center;
+  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-li:hover {
   fill: #2196f3;
   color: #2196f3;
-  transition: 250ms;
 }
 .info-li-a {
   color: #757575;
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-li-a:hover {
   color: #2196f3;
   cursor: pointer;
-  transition: 250ms;
+  
 }
 .svg-envelope{
   width:18px ;
   height:14px ;
   margin-right: 10px;
   fill: #757575;
-transition: fill 250ms;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-envelope:hover{
   fill: #2196F3;
@@ -142,7 +144,7 @@ width: 18px;
 height: 14px;
 margin-right: 10px;
   fill: #757575;
-transition:  fill 250ms;
+transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-smartphone:hover{
 fill: #2196F3;
@@ -184,11 +186,11 @@ fill: #2196F3;
   text-decoration: none;
   padding: 12px;
   padding-top: 15px;
+  transition:background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),border-radius 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .li-svg-s4-2:hover {
   background-color: #2196f3;
   border-radius: 50%;
-  transition: 500ms;
 }
 .li-svg-s4-2:not(:last-child) {
   margin-right: 10px;
@@ -302,10 +304,8 @@ footer {
   border-radius: 4px;
   background-color: #2f303a;
   padding-left: 16px;
-  transition: 500ms;
 }
-.rosulka-input:hover {
-}
+
 .rosulka-input:focus {
   outline: 0px solid;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -326,7 +326,7 @@ footer {
   align-items: center;
   color: #ffffff;
   border-radius: 4px;
-  transition: box-shadow 500ms;
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-right: 28px;
 }
 .rosulka-button:hover {
@@ -386,7 +386,7 @@ font-weight: 500;
 line-height: 26px;
 letter-spacing: 0.48px;
 padding: 6px 22px 6px 22px;
-transition:box-shadow 250ms,color 250ms,background-color 250ms;
+transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .s1-btn-active{
 padding: 6px 25px 6px 25px;
@@ -431,7 +431,7 @@ padding: 63px 24px 63px 24px;
 background: rgba(33, 150, 243, 0.90);
 transform:translateY(100%);
 opacity: 0;
-transition:transform 250ms,opacity 250ms ;
+transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .galerry-li:hover .gallery-img-p{
     transform:translateY(0%);
@@ -459,7 +459,7 @@ letter-spacing: 0.48px;
 .galerry-li{
     border: 1px solid #EEE;
 background: #FFF;
-transition:box-shadow 250ms;
+transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover{
 box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
