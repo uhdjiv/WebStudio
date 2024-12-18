@@ -23,9 +23,16 @@ a {
   text-decoration: none;
 }
 .conteiner {
-  width: 1170px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and (min-width:768px) {
+    width: 768px;
+  }
+  @media screen and (min-width:1200px) {
+      width: 1170px;
+  }
+  
 }
 .navigation {
   display: flex;
@@ -344,7 +351,54 @@ footer {
   margin-top: 94px;
   margin-bottom: 94px;
 }
+.s1-ul{
+display: flex;
+justify-content: center;
+margin-top: 94px;
+margin-bottom: 50px;
 
+}
+.s1-li{
+
+// padding-top: 6px;
+// padding-left: 22px;
+
+}
+.s1-li:not(:first-child){
+margin-left: 8px;
+}
+.s1-li1{
+// width: 73px;
+// height: 38px;
+// background-color: #2196F3;
+// padding-left: 25px;
+}
+.s1-btn{
+  display: block;
+  background-color: #F5F4FA;
+border-radius: 4px;
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.48px;
+padding: 6px 22px 6px 22px;
+transition:box-shadow 250ms,color 250ms,background-color 250ms;
+}
+.s1-btn-active{
+padding: 6px 25px 6px 25px;
+color: #212121;
+  background-color: #F5F4FA;
+}
+.s1-btn:hover{
+  cursor: pointer;
+  background-color: #2196F3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
 .galerry{
     display: grid;
     grid-template-columns: repeat(3,370px);
@@ -358,6 +412,31 @@ padding: 20px 24px;
 width: 370px;
 height: 294px;
 }
+.img-and-p{
+  position: relative;
+  overflow: hidden;
+}
+.gallery-img-p{
+  position: absolute;
+ color: #FFF;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.54px;
+top: 0;
+right: 0;
+padding: 63px 24px 63px 24px;
+background: rgba(33, 150, 243, 0.90);
+transform:translateY(100%);
+opacity: 0;
+transition:transform 250ms,opacity 250ms ;
+  }
+  .galerry-li:hover .gallery-img-p{
+    transform:translateY(0%);
+    opacity: 1;
+  }
 .galerry-p{
 margin-bottom: 4px;
 color: #212121;
