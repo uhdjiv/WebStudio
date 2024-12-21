@@ -1,0 +1,302 @@
+.backdrop {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  display: block;
+  animation-name: backdropBot;
+  animation-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-direction: alternate;
+}
+@keyframes backdropBot {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
+@keyframes modalTop {
+  0% {
+    top: -100%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+.is-hidden {
+  display: none;
+  pointer-events: none;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  position: fixed;
+  animation-name: modalTop;
+  animation-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation-direction: alternate;
+  border-radius: 2px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition:box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal:hover {
+  box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.close-button {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.close-button:hover .modal-close-svg {
+  fill: #2196f3;
+  cursor: pointer;
+}
+.modal-close-svg {
+  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.form-modal {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 448px;
+}
+.div-modal {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-name {
+  width: 22px;
+  height: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.person-black {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 15px;
+}
+.person-black:hover {
+  fill: #2196f3;
+}
+.modal-input-1 {
+  box-sizing: border-box;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.modal-input-1:focus {
+  outline: 2px solid #2196f3;
+}
+.modal-phone {
+  width: 50px;
+  height: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.phone-black {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 15px;
+}
+.phone-black:hover {
+  fill: #2196f3;
+}
+.modal-input-2:focus {
+  outline: 2px solid #2196f3;
+}
+.modal-input-2 {
+  box-sizing: border-box;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.modal-email {
+  width: 38px;
+  height: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.email-black {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 15px;
+}
+.email-black:hover {
+  fill: #2196f3;
+}
+.modal-input-3:focus {
+  outline: 2px solid #2196f3;
+}
+.modal-input-3 {
+  box-sizing: border-box;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.modal-comm {
+  width: 57px;
+  height: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.textarea-modal {
+  box-sizing: border-box;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+}
+.textarea-modal:focus {
+  outline: 2px solid #2196f3;
+}
+.div-input-3000pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.input-checkbox {
+  width: 16px;
+  height: 15px;
+}
+.input-checkbox:hover {
+  cursor: pointer;
+}
+.p-checkbox {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+  padding-left: 7px;
+}
+.a-input-3000pro {
+  text-decoration: underline;
+  color: #2196f3;
+}
+.button-form {
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #188ce8;
+  padding-left: 52px;
+  padding-right: 52px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.button-form:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 7px 37px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 37px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 37px -6px rgba(0, 0, 0, 0.75);
+}
+.svg-antenna {
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.svg-clock {
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.svg-diagram {
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.svg-astronaut {
+  width: 70px;
+  height: 70px;
+  display: flex;
+}

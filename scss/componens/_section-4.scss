@@ -1,0 +1,98 @@
+.section-4 {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.h2-section4 {
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.ul-section4 {
+  display: flex;
+  padding: 0px;
+}
+.li-section4 {
+  background-color: #ffffff;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.li-section4:not(:last-child) {
+  margin-right: 30px;
+}
+.img-section4 {
+  width: 270px;
+  height: 260px;
+  margin-bottom: 30px;
+}
+.p-name-section4 {
+  font-family: Roboto;
+  font-weight: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #212121;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.p-work-section4 {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.svg-ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.li-svg-s4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.li-svg-s4:hover {
+  background-color: #2196f3;
+}
+.li-svg-s4:hover .svg-all {
+  fill: #ffffff;
+}
+.a-svg-s4 {
+  text-decoration: none;
+  padding: 12px;
+}
+.svg-all {
+  fill: #afb1b8;
+}
+.svg-instagram {
+  width: 20px;
+  height: 20px;
+}
+.svg-twitter {
+  width: 20px;
+  height: 20px;
+}
+.svg-facebook {
+  width: 20px;
+  height: 20px;
+}
+.svg-linkedin {
+  width: 20px;
+  height: 20px;
+}
