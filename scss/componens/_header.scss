@@ -23,20 +23,70 @@ a {
   text-decoration: none;
 }
 .conteiner {
-  width: 1170px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+header {
+  padding: 16px 0 16px 0;
 }
 .navigation {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 60px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.mobile__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 .logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
   color: #2196f3;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
+}
+.logo-hide {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+    display: none;
+  }
 }
 .span {
   color: #000000;
@@ -45,46 +95,56 @@ a {
   font-family: Roboto;
   font-weight: Medium;
   font-size: 14px;
-  display: flex;
+  display: none;
   margin-left: 50px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1199px) {
+    display: flex;
+  }
 }
 .nav-li {
   margin: 20px;
-color: #212121;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 .nav-li:hover {
   color: #2196f3;
   cursor: pointer;
-    transition: 250ms;
+  transition: 250ms;
 }
-.nav-li-stydio{
-      color: #2196f3;
+.nav-li-stydio {
+  color: #2196f3;
 }
-.nav-li-a-stydio{
-color: #2196f3;
-position: relative;
+.nav-li-a-stydio {
+  color: #2196f3;
+  position: relative;
+  font-family: Roboto;
+  font-weight: Medium;
+  font-size: 14px;
+  align-items: center;
 }
-.nav-li-a-stydio::after{
-  content:"" ;
+.nav-li-a-stydio::after {
+  content: "";
   display: block;
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: 4px;
   top: 44px;
   background-color: #2196f3;
   border-radius: 2px;
-  transition:top 250ms,transform 250ms;
+  transition: top 250ms, transform 250ms;
 }
-.nav-li-a-stydio:hover::after{
-top: 41px;
-transform: scale(1.2);
+.nav-li-a-stydio:hover::after {
+  top: 41px;
+  transform: scale(1.2);
 }
 .a-nav {
   color: #212121;
@@ -92,69 +152,128 @@ transform: scale(1.2);
 .a-nav:hover {
   color: #2196f3;
   cursor: pointer;
-    transition: 250ms;
+  transition: 250ms;
 }
 .info {
-  font-family: Roboto;
-  font-weight: Medium;
-  font-size: 14px;
-  display: flex;
-  margin-left: 250px;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    font-family: Roboto;
+    font-weight: Medium;
+    font-size: 14px;
+    display: flex;
+    margin-left: 250px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1199px) {
+    font-family: Roboto;
+    font-weight: Medium;
+    font-size: 14px;
+    display: flex;
+    margin-left: 250px;
+    align-items: center;
+  }
 }
 .info-li {
   margin: 20px;
   display: flex;
   align-items: center;
-  
 }
-.info-li:hover{
-  fill: #2196F3;
-  color: #2196F3;
-    transition: 250ms;
+.info-li:hover {
+  fill: #2196f3;
+  color: #2196f3;
+  transition: 250ms;
 }
 .info-li-a {
   display: flex;
   align-items: center;
   color: #757575;
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
 .info-li-a:hover {
   color: #2196f3;
   cursor: pointer;
-    .svg-envelope{
-      fill: #2196F3;
-    }
-    .svg-smartphone{
-      fill: #2196F3;
-    }
-}
-.svg-envelope{
-  width:18px ;
-  height:14px ;
-  margin-right: 10px;
-  fill: #757575;
-transition: fill 250ms;
-}
-.svg-envelope:hover{
-  fill: #2196F3;
-  .info-li-a{
-    color: #2196F3;
+  .svg-envelope {
+    fill: #2196f3;
+  }
+  .svg-smartphone {
+    fill: #2196f3;
   }
 }
-.svg-smartphone{
-width: 18px;
-height: 14px;
-margin-right: 10px;
+.svg-envelope {
+  width: 18px;
+  height: 14px;
+  margin-right: 10px;
   fill: #757575;
-transition:  fill 250ms;
+  transition: fill 250ms;
+}
+.svg-envelope:hover {
+  fill: #2196f3;
+  .info-li-a {
+    color: #2196f3;
+  }
+}
+.svg-smartphone {
+  width: 18px;
+  height: 14px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms;
 }
 
-.svg-smartphone:hover{
-fill: #2196F3;
+.svg-smartphone:hover {
+  fill: #2196f3;
+}
+.menu__nav {
+  width: 40px;
+  height: 40px;
+  fill: black;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+  }
+}
+.button__tel__nav {
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+  }
+}
+.mobile__nav {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #fff;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+  }
+}
+.close__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  z-index: 300;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+  }
+}
+.close__button__svg {
+  fill: black;
+  width: 40px;
+  height: 40px;
 }

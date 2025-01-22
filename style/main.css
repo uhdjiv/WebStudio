@@ -49,22 +49,86 @@ a {
 }
 
 .conteiner {
-  width: 1170px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+header {
+  padding: 16px 0 16px 0;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 60px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.mobile__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
 .logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
   color: #2196f3;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1199px) {
+  .logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
+}
+
+.logo-hide {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .logo-hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .logo-hide {
+    display: none;
+  }
 }
 
 .span {
@@ -75,9 +139,19 @@ a {
   font-family: Roboto;
   font-weight: Medium;
   font-size: 14px;
-  display: flex;
+  display: none;
   margin-left: 50px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav-ul {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .nav-ul {
+    display: flex;
+  }
 }
 
 .nav-li {
@@ -104,6 +178,10 @@ a {
 .nav-li-a-stydio {
   color: #2196f3;
   position: relative;
+  font-family: Roboto;
+  font-weight: Medium;
+  font-size: 14px;
+  align-items: center;
 }
 
 .nav-li-a-stydio::after {
@@ -134,12 +212,27 @@ a {
 }
 
 .info {
-  font-family: Roboto;
-  font-weight: Medium;
-  font-size: 14px;
-  display: flex;
-  margin-left: 250px;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .info {
+    font-family: Roboto;
+    font-weight: Medium;
+    font-size: 14px;
+    display: flex;
+    margin-left: 250px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .info {
+    font-family: Roboto;
+    font-weight: Medium;
+    font-size: 14px;
+    display: flex;
+    margin-left: 250px;
+    align-items: center;
+  }
 }
 
 .info-li {
@@ -149,8 +242,8 @@ a {
 }
 
 .info-li:hover {
-  fill: #2196F3;
-  color: #2196F3;
+  fill: #2196f3;
+  color: #2196f3;
   transition: 250ms;
 }
 
@@ -171,10 +264,10 @@ a {
   cursor: pointer;
 }
 .info-li-a:hover .svg-envelope {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 .info-li-a:hover .svg-smartphone {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .svg-envelope {
@@ -186,10 +279,10 @@ a {
 }
 
 .svg-envelope:hover {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 .svg-envelope:hover .info-li-a {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .svg-smartphone {
@@ -201,7 +294,57 @@ a {
 }
 
 .svg-smartphone:hover {
-  fill: #2196F3;
+  fill: #2196f3;
+}
+
+.menu__nav {
+  width: 40px;
+  height: 40px;
+  fill: black;
+}
+@media screen and (min-width: 768px) {
+  .menu__nav {
+    display: none;
+  }
+}
+.button__tel__nav {
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .button__tel__nav {
+    display: none;
+  }
+}
+.mobile__nav {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .mobile__nav {
+    display: none;
+  }
+}
+.close__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  z-index: 300;
+}
+@media screen and (min-width: 768px) {
+  .close__button {
+    display: none;
+  }
+}
+.close__button__svg {
+  fill: black;
+  width: 40px;
+  height: 40px;
 }
 
 .section-1 {
