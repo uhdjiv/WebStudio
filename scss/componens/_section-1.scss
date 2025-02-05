@@ -4,11 +4,17 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/img.webp);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .center {
   text-align: center;

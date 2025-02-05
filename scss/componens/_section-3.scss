@@ -1,5 +1,11 @@
 .section3 {
-  height: 440px;
+  display: none;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    padding-bottom: 94px;
+    display: flex;
+  }
 }
 .h2-section3 {
   font-family: Roboto;

@@ -1,19 +1,40 @@
 .section-4 {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .h2-section4 {
-  font-family: Roboto;
-  font-weight: Bold;
-  font-size: 36px;
-  display: flex;
+  color: #212121;
+  text-align: center;
   justify-content: center;
-  margin-bottom: 50px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    font-size: 36px;
+    display: flex;
+    margin-bottom: 50px;
+  }
 }
 .ul-section4 {
-  display: flex;
+  display: block;
   padding: 0px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    display: flex;
+  }
 }
 .li-section4 {
   background-color: #ffffff;
