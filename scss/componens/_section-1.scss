@@ -50,7 +50,8 @@
     width: 216px;
     border-radius: 5px 5px 5px 5px;
     margin-top: 30px;
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .button-section1:hover {
@@ -58,5 +59,6 @@
     box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12),
       0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transform: scale(1.1);
   }
 }

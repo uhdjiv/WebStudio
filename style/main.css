@@ -68,10 +68,6 @@ a {
   }
 }
 
-header {
-  padding: 16px 0 16px 0;
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -88,6 +84,7 @@ header {
   .navigation {
     display: flex;
     align-items: center;
+    height: 80px;
   }
 }
 
@@ -114,6 +111,7 @@ header {
   .logo {
     font-size: 26px;
     letter-spacing: 0.78px;
+    align-items: center;
   }
 }
 
@@ -163,6 +161,7 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  align-items: center;
 }
 
 .nav-li:hover {
@@ -400,7 +399,7 @@ header {
     width: 216px;
     border-radius: 5px 5px 5px 5px;
     margin-top: 30px;
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -408,6 +407,7 @@ header {
   .button-section1:hover {
     box-shadow: 0px 1px 3px rgba(255, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transform: scale(1.1);
   }
 }
 
@@ -657,51 +657,73 @@ header {
 }
 
 .li-section4 {
+  padding-bottom: 24px;
   background-color: #ffffff;
-  padding-bottom: 30px;
-  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1199px) {
+  .li-section4 {
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .li-section4:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1199px) {
+  .li-section4:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .img-section4 {
-  width: 270px;
-  height: 260px;
+  display: block;
+  width: 450px;
+  height: 460px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1199px) {
+  .img-section4 {
+    display: flex;
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .p-name-section4 {
-  font-family: Roboto;
-  font-weight: Medium;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
   color: #212121;
   text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
-
 .p-work-section4 {
+  color: #757575;
+  text-align: center;
   font-family: Roboto;
   font-size: 16px;
-  color: #757575;
-  margin-bottom: 16px;
-  text-align: center;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 16px;
 }
-
 .svg-ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (min-width: 1199px) {
+  .svg-ul {
+    justify-content: space-evenly;
+  }
 }
 
 .li-svg-s4 {
@@ -911,18 +933,39 @@ footer {
 }
 
 .div-foot {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .div-foot {
+    display: flex;
+  }
 }
 
 .div-foot-x2 {
-  margin-right: 70px;
+  margin-right: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .div-foot-x2 {
+    margin-right: 70px;
+  }
 }
 
 .logo2 {
+  color: #2196F3;
+  text-align: center;
   font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  color: #2196f3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (min-width: 1200px) {
+  .logo2 {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    color: #2196f3;
+  }
 }
 
 .span-2 {
@@ -930,32 +973,53 @@ footer {
 }
 
 .address {
-  margin-top: 20px;
-  font-family: Roboto;
-  font-weight: Regular;
-  font-size: 14px;
-  color: #ffffff;
+  color: #FFF;
+  text-align: center;
   font-family: "Roboto";
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    font-weight: Regular;
+  }
 }
 
 .mail {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
   font-family: Roboto;
-  font-weight: Regular;
   font-size: 14px;
-  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .mail {
+    font-weight: Regular;
+    margin-top: 10px;
+  }
 }
 
 .tel {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
   font-family: Roboto;
-  font-weight: Regular;
   font-size: 14px;
-  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .tel {
+    font-weight: Regular;
+    margin-top: 10px;
+  }
 }
 
 .address-li-a {
@@ -968,19 +1032,34 @@ footer {
 }
 
 .h2-foot-svg {
+  color: #FFF;
+  text-align: center;
   font-family: "Roboto";
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: normal;
   text-transform: uppercase;
-  color: #ffffff;
-  padding-bottom: 20px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .h2-foot-svg {
+    line-height: 16px;
+    padding-bottom: 20px;
+  }
 }
 
 .svg-ul-2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .svg-ul-2 {
+    display: flex;
+  }
 }
 
 .li-svg-s4-2 {
@@ -992,10 +1071,10 @@ footer {
   background-color: #3d454c;
   border-radius: 50%;
 }
-
 .li-svg-s4-2:hover .svg-all-2 {
   fill: #ffffff;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms;
 }
 
 .li-svg-s4-2:hover {
@@ -1017,19 +1096,26 @@ footer {
   fill: #ffffff;
 }
 
-.footer-div-rossulka {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .footer-div-rossulka {
+    margin-left: 93px;
+  }
 }
 
-.rosulka-p {
-  width: 207px;
-  height: 16px;
+.rosulka-h2 {
+  color: #FFF;
+  text-align: center;
   font-family: "Roboto";
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  line-height: normal;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .rosulka-h2 {
+    margin-top: 0;
+  }
 }
 
 .rosulka-input {

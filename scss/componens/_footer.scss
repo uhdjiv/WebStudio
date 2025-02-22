@@ -4,45 +4,95 @@ footer {
   padding-bottom: 60px;
 }
 .div-foot {
-  display: flex;
+  display: block;
+  @media screen and (min-width: 768px) {
+  
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .div-foot-x2 {
+  margin-right: 0px;
+  @media screen and (min-width: 768px) {
+  
+  }
+  @media screen and (min-width: 1200px) {
   margin-right: 70px;
+  }
 }
 .logo2 {
+  color: #2196F3;
+  text-align: center;
   font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  color: #2196f3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    color: #2196f3;
+  }
 }
 .span-2 {
   color: #ffffff;
 }
 .address {
-  margin-top: 20px;
-  font-family: Roboto;
-  font-weight: Regular;
-  font-size: 14px;
-  color: #ffffff;
+  color: #FFF;
+  text-align: center;
   font-family: "Roboto";
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    
+    font-weight: Regular;
+  }
 }
 .mail {
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
   font-family: Roboto;
-  font-weight: Regular;
   font-size: 14px;
-  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: Regular;
+    margin-top: 10px;
+  }
 }
 .tel {
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
   font-family: Roboto;
-  font-weight: Regular;
   font-size: 14px;
-  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+  
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: Regular;
+    margin-top: 10px;
+  }
 }
 .address-li-a {
   color: #ffffff99;
@@ -52,18 +102,35 @@ footer {
   cursor: pointer;
 }
 .h2-foot-svg {
+  color: #FFF;
+  text-align: center;
   font-family: "Roboto";
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: normal;
   text-transform: uppercase;
-  color: #ffffff;
-  padding-bottom: 20px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 16px;
+    padding-bottom: 20px;
+  }
 }
 .svg-ul-2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px ;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .li-svg-s4-2 {
   display: flex;
@@ -73,15 +140,22 @@ footer {
   height: 44px;
   background-color: #3d454c;
   border-radius: 50%;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
 }
 .li-svg-s4-2:hover .svg-all-2 {
   fill: #ffffff;
-  transition:background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),border-radius 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms;
 }
 .li-svg-s4-2:hover {
   background-color: #2196f3;
   border-radius: 50%;
-  
 }
 .li-svg-s4-2:not(:last-child) {
   margin-right: 10px;
@@ -95,17 +169,28 @@ footer {
   fill: #ffffff;
 }
 .footer-div-rossulka {
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
-.rosulka-p {
-  width: 207px;
-  height: 16px;
+.rosulka-h2 {
+  color: #FFF;
+  text-align: center;
   font-family: "Roboto";
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+  line-height: normal;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+  margin-top: 0;
+  }
 }
 .rosulka-input {
   margin-top: 20px;
